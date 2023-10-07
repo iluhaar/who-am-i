@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 50vw;
+  flex-wrap: wrap;
+}
+
+.cvItem {
+  display: flex;
+  flex: 1; /* Distribute available space evenly among items */
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+  padding: 2rem;
+}

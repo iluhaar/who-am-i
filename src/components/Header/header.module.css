@@ -1,0 +1,75 @@
+.sticky_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #61dafbaa;
+  z-index: 1;
+  background-color: black;
+}
+
+.menu {
+  display: flex;
+  z-index: 999999;
+  gap: 1rem;
+}
+.menu li {
+  display: inline-block;
+  position: relative;
+}
+.menu li.dropdown:hover > .submenu {
+  display: block;
+}
+.menu li a {
+  text-decoration: none;
+}
+.menu li a:visited {
+  color: rgba(255, 255, 255, 0.87);
+  /* text-decoration: none; */
+}
+
+.menu li a:hover {
+  color: #61dafbaa;
+}
+
+.menu .submenu {
+  display: none;
+}
+.submenu {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  left: 0px;
+  list-style-type: none;
+  display: block;
+  width: 200px;
+  z-index: 9;
+}
+.submenu li {
+  display: block;
+}
+.submenu li a {
+  display: block;
+  background: #999;
+  color: #fff;
+  padding: 8px 6px;
+  margin-bottom: 1px;
+}
+.menu .submenu > li.dropdown:hover > .submenu {
+  display: block;
+}
+
+.menu .submenu .submenu {
+  position: absolute;
+  left: 200px;
+  top: 0px;
+}
+
+.submenu li.dropdown > a:after {
+  content: "\e258";
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 8px;
+  font-size: 10px;
+}

@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 5rem;
+  align-items: center;
+  min-width: 100vw;
+  height: 30vh;
+}
+
+.buttons__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.textarea {
+  min-width: 30rem;
+  min-height: 10rem;
+}

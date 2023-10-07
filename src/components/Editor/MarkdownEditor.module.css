@@ -1,0 +1,39 @@
+.markdown__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.editor {
+  display: flex;
+  height: 45vh;
+  width: 50vw;
+}
+
+textarea {
+  flex: 1;
+}
+
+.preview {
+  flex: 1;
+  padding: 16px;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.markdown_buttons__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  gap: 1rem;
+}

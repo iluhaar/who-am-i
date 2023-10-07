@@ -1,0 +1,39 @@
+.sidebar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 5vw;
+  height: 100vh;
+  background-color: #1a1a1a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar li {
+  padding: 10px;
+}
+
+.sidebar a {
+  color: #f3f3f3;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  color: #535bf2;
+}
+
+.notes_list {
+  color: #41dbf0;
+}
+
+.hide_notes {
+  display: none;
+}
+
+.sidebar:hover {
+  width: 10vw;
+  transition: width 0.5s ease-in-out;
+}
