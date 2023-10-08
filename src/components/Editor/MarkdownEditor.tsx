@@ -36,7 +36,7 @@ export const MarkdownEditor = () => {
         ...notes,
         {
           id: notes.length + 1,
-          title: markdown.split("\n").at(0),
+          title: markdown.split("\n")[0],
           text: markdown,
         },
       ])

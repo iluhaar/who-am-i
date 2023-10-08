@@ -8,7 +8,7 @@ const Sidebar = ({ activePath }: Props) => {
 
   const showNotesList = activePath.includes("editor") || activePath.includes("note");
 
-  const activeNote = activePath.includes("/note/") && activePath.split("/tools/note/").at(1);
+  const activeNote = activePath.includes("/note/") && activePath.split("/tools/note/")[1];
 
   return (
     <ul className={styles.sidebar}>
