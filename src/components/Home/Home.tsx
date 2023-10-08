@@ -9,12 +9,12 @@ const Home = () => {
 
   return (
     <>
-      <header
-        className={styles.header}
-        onClick={() => setShowLinks((prev) => !prev)}
-        title="Click to see my social links"
-      >
-        <div style={{ display: "flex", flexDirection: "column" }}>
+      <header className={styles.header}>
+        <div
+          style={{ display: "flex", flexDirection: "column", cursor: "pointer" }}
+          onClick={() => setShowLinks((prev) => !prev)}
+          title="Click to see my social links"
+        >
           <img className={styles.logo_me} alt="me" />
           <h2> Illia Rudyi </h2>
         </div>
