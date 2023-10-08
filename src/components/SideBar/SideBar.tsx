@@ -21,12 +21,18 @@ const Sidebar = ({ activePath }: Props) => {
         Tools
         <ul>
           <li>
-            <Link to={"/tools/encoder"} className={activePath === "/tools/encoder" ? styles.active : ""}>
+            <Link
+              to={"/who-am-i/tools/encoder"}
+              className={activePath === "/who-am-i/tools/encoder" ? styles.active : ""}
+            >
               Encoder
             </Link>
           </li>
           <li>
-            <Link to={"/tools/editor"} className={activePath === "/tools/editor" ? styles.active : ""}>
+            <Link
+              to={"/who-am-i/tools/editor"}
+              className={activePath === "/who-am-i/tools/editor" ? styles.active : ""}
+            >
               Markdown Editor
             </Link>
             {notes.length > 0 && (
@@ -35,7 +41,7 @@ const Sidebar = ({ activePath }: Props) => {
                   <li key={note.id}>
                     {" "}
                     <Link
-                      to={`/tools/note/${note.id}`}
+                      to={`/who-am-i/tools/note/${note.id}`}
                       className={showNotesList && Number(activeNote) === note.id ? styles.active : ""}
                     >
                       {note?.title?.replace(/[^a-zA-Z0-9 ]/g, "")}

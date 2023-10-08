@@ -9,23 +9,23 @@ import App from "./App.tsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/who-am-i/",
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "/who-am-i/",
         element: <App />,
       },
       {
-        path: "/tools/encoder",
+        path: "/who-am-i/tools/encoder",
         element: <Encoder />,
       },
       {
-        path: "/tools/editor",
+        path: "/who-am-i/tools/editor",
         element: <MarkdownEditor />,
       },
       {
-        path: "/tools/note/:id",
+        path: "/who-am-i/tools/note/:id",
         element: <MarkdownEditor />,
       },
     ],
