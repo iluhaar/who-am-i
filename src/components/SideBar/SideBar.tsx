@@ -13,7 +13,7 @@ const Sidebar = ({ activePath }: Props) => {
   return (
     <ul className={styles.sidebar}>
       <li>
-        <Link to={"/"} className={activePath === "/" ? styles.active : ""}>
+        <Link to={"/who-am-i/"} className={activePath === "/" ? styles.active : ""}>
           Home
         </Link>
       </li>
