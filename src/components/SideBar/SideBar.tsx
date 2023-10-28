@@ -21,12 +21,18 @@ const Sidebar = ({ activePath }: Props) => {
         Tools
         <ul>
           <li>
-            <Link to={"/tools/encoder"} className={activePath === "/tools/encoder" ? styles.active : ""}>
+            <Link
+              to={"/who-am-i/tools/encoder"}
+              className={activePath === "/who-am-i/tools/encoder" ? styles.active : ""}
+            >
               Encoder
             </Link>
           </li>
           <li>
-            <Link to={"/tools/editor"} className={activePath === "/tools/editor" ? styles.active : ""}>
+            <Link
+              to={"/who-am-i/tools/editor"}
+              className={activePath === "/who-am-i/tools/editor" ? styles.active : ""}
+            >
               Markdown Editor
             </Link>
             {notes.length > 0 && (
