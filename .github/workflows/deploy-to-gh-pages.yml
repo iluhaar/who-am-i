@@ -15,7 +15,7 @@ jobs:
       - run: npm run build
 
     outputs:
-      build_dir: ./build
+      build_dir: ./dist
 
   deploy:
     needs: build
