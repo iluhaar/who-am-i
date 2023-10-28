@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { createBrowserRouter, HashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Encoder from "./components/Encoder/Encoder.tsx";
 import Layout from "./components/Layout/Layout.tsx";
 import { MarkdownEditor } from "./components/Editor/MarkdownEditor.tsx";
@@ -9,23 +9,23 @@ import App from "./App.tsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/who-am-i/",
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "/who-am-i/",
         element: <App />,
       },
       {
-        path: "/tools/encoder",
+        path: "/who-am-i/tools/encoder",
         element: <Encoder />,
       },
       {
-        path: "/tools/editor",
+        path: "/who-am-i/tools/editor",
         element: <MarkdownEditor />,
       },
       {
-        path: "/tools/note/:id",
+        path: "/who-am-i/tools/note/:id",
         element: <MarkdownEditor />,
       },
     ],
@@ -34,8 +34,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <HashRouter>
-      <RouterProvider router={router} />
-    </HashRouter>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
